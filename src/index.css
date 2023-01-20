@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app{
+    background: #001C35;
+    color: #DFF6FF;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
