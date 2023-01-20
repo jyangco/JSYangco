@@ -9,7 +9,11 @@ module.exports = {
       colors: {
         navy: '#001C35',
         lightblue: '#47B5FF'
-      }
+      },
+      container: {
+        center: true,
+        padding: '100px',
+      },
     },
   },
   plugins: [],

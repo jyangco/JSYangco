@@ -3,7 +3,13 @@ import React from 'react'
 function AboutMePage() {
     return (
         <div className="h-screen">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum fugiat maxime unde repudiandae accusamus autem rem debitis quasi hic consectetur libero quae porro eum similique aperiam, sapiente repellendus vitae earum?
+            <div className="container">
+                <div className="content-box">
+                    <div className="text-5xl text-left">
+                        About Me
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

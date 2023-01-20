@@ -3,7 +3,11 @@ import React from 'react'
 function HomePage() {
     return (
         <div className="h-screen">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe architecto at accusamus perspiciatis tempore, repellendus aliquam ullam quidem incidunt illum eveniet aperiam quibusdam, culpa iste? Fuga magni nostrum iure exercitationem?
+            <div className="container">
+                <div className="content-box">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga enim ipsam, provident incidunt vero dolores dicta, sunt at dolore, porro rem blanditiis voluptatum a consectetur recusandae magnam itaque atque velit!
+                </div>
+            </div>
         </div>
     )
 }

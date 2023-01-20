@@ -7,3 +7,8 @@
     color: #DFF6FF;
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
+
+.content-box{
+    margin: 0px 150px;
+    padding: 100px 0px;
+}

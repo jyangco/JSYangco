@@ -48,12 +48,15 @@ function App() {
             <div className="aboutMeContainer"  ref={aboutmeRef} >
                 <AboutMePage />
             </div>
+            <hr className="my-5"/>
             <div className="experienceContainer"  ref={experienceRef} >
                 <ExperiencePage />
             </div>
+            <hr className="my-5"/>
             <div className="projectsContainer"  ref={projectsRef} >
                 <ProjectsPage />
             </div>
+            <hr className="my-5"/>
             <div className="contactContainer"  ref={contactRef} >
                 <ContactPage />
             </div>
