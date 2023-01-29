@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState, useLayoutEffect } from 'react'
 
 import Header from './components/Header'
 import HomePage from './pages/HomePage'
@@ -7,7 +7,10 @@ import ExperiencePage from './pages/ExperiencePage'
 import ProjectsPage from './pages/ProjectsPage'
 import ContactPage from './pages/ContactPage'
 
+import Loader from './components/Loader'
+
 function App() {
+    const [loading, setLoading] = useState(true)
     const aboutmeRef  = useRef(null)
     const experienceRef = useRef(null)
     const projectsRef = useRef(null)
@@ -19,6 +22,18 @@ function App() {
         })
     }
 
+    useLayoutEffect(() => {
+        setTimeout(() => {
+            setLoading(false)
+        }, 3500)
+    }, [])
+    
+
+    if(loading == true){
+        return(
+            <Loader />
+        )
+    }
     return (
         <div className="app">
             <Header>
@@ -43,21 +58,23 @@ function App() {
                     <span className="text-lightblue"> 04. </span> Contact 
                 </button>
             </Header>
-            <HomePage />
+            <div className="container">
+                <HomePage />
+            </div>
             <hr className="my-5"/>
-            <div className="aboutMeContainer"  ref={aboutmeRef} >
+            <div className="container"  ref={aboutmeRef} >
                 <AboutMePage />
             </div>
             <hr className="my-5"/>
-            <div className="experienceContainer"  ref={experienceRef} >
+            <div className="container"  ref={experienceRef} >
                 <ExperiencePage />
             </div>
             <hr className="my-5"/>
-            <div className="projectsContainer"  ref={projectsRef} >
+            <div className="container"  ref={projectsRef} >
                 <ProjectsPage />
             </div>
             <hr className="my-5"/>
-            <div className="contactContainer"  ref={contactRef} >
+            <div className="container"  ref={contactRef} >
                 <ContactPage />
             </div>
         </div>
