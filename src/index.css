@@ -17,6 +17,12 @@
     background: #47B5FF; 
 }
 
+@media screen and (max-width: 425px) {
+    .app {
+        background-color: lightblue;
+    }
+}
+
 .app{
     background: #001C35;
     color: #DFF6FF;
@@ -31,7 +37,7 @@
     margin: 0px 150px;
     padding: 100px 0px;
     height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 #navbar{
@@ -93,4 +99,12 @@
     100% {
         opacity: 1;
     }
+}
+
+.rightpanel{
+    border-left: 2px dashed white;
+}
+
+.leftpanel{
+    border-right: 2px dashed white;
 }
