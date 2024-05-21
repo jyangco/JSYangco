@@ -17,27 +17,39 @@
     background: #47B5FF; 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 430px) {
     .app {
         background-color: lightblue;
+    }
+    .container{
+        padding: 0;
+    }
+    .content-box{
+        margin: 0px 50px !important;
+        padding: 10px 0px !important;
+        height: 90vh !important;
     }
 }
 
 .app{
     background: #001C35;
     color: #DFF6FF;
+    width: 100vw;
+
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 .content-box p{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content-box{
     margin: 0px 150px;
     padding: 100px 0px;
     height: 100vh;
-    /* overflow-y: auto; */
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 #navbar{
@@ -45,6 +57,7 @@
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     z-index: 999;
+    width: 100vw;
 }
 
 @keyframes dropAnimation {
@@ -84,12 +97,6 @@
     100%{
         border: 15px solid #47B5FF;
     }
-}
-
-.content-box{
-    animation: fadeInAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {

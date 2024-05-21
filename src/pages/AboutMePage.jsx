@@ -8,30 +8,27 @@ function AboutMePage() {
             <div className="text-5xl text-left">
                 About Me
             </div>
-            <div className="flex gap-5">
-                <div className="w-3/5 mt-10">
-                    <p>
-                        Hi! My name is Jason, and I received a degree in Information Technology from Technological University of the Philippines in 2020.
+            <div className="flex mobile-lg:!block gap-5">
+                <div className="w-3/5 mobile-lg:!w-[100%] mt-10 mobile-lg:!mt-5">
+                    <div className="block mobile-lg:!flex">
+                        <p className='mobile-lg:!text-sm mobile-lg:!w-[50%] mobile-lg:!my-auto'>
+                            Hi! My name is Jason, and I am passionate Full Stack Developer. 
+                        </p>
+                        <img className="hidden mobile-lg:block mobile-lg:!h-[120px] mobile-lg:!w-[100px] mobile-lg:!mx-2"
+                            src={pic} alt="JSY" 
+                        />
+                    </div>
+                    <p className='mobile-lg:!text-sm'>
+                        My experience in web development has given me a strong foundation in both front-end and back-end technologies.
+                        During my career, I have had the chance to work on multiple projects from start to finish. 
+                        One project that stands out is the DOST - SEI's GAD Information System, known as GADIS, which is currently in use within the institute. 
+                        As the only developer and a recent graduate at the time, it was a challenging experience but ultimately rewarding as I acquired new knowledge and improved my skills.
                     </p>
-                    <p>
-                        As a Web Developer, I presently work at the Department of Science and Technology's Science Education Institute.
-                        I am passionate about making websites work well and make them look beautiful.
-                        The web is also the only place where I can express my creativity in ways that are hard to find elsewhere.
+                    <p className='mobile-lg:!text-sm'>
+                        I am adept at problem-solving and is always eager to learn and adapt to new technologies 
                     </p>
-                    {/* <p>
-                        Here are few of the technologies I've been working with:
-                    </p>
-                    <ul className="columns-2">
-                        <li> JavaScript(ES6) </li>
-                        <li> React </li>
-                        <li> Laravel </li>
-                        <li> Node.js </li>
-                        <li> Express.js </li>
-                        <li> Tailwind CSS </li>
-                        <li> Bootstrap 5 </li>
-                    </ul> */}
                 </div>
-                <div className="w-2/5">
+                <div className="w-2/5 mobile-lg:!hidden">
                     <img src={pic} alt="JSY" />
                 </div>      
             </div>

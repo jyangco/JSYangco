@@ -65,19 +65,15 @@ function App() {
             <div className="container">
                 <HomePage />
             </div>
-            <hr className="my-5"/>
             <div className="container"  ref={aboutmeRef} >
                 <AboutMePage />
             </div>
-            <hr className="my-5"/>
             <div className="container"  ref={experienceRef} >
                 <ExperiencePage />
             </div>
-            <hr className="my-5"/>
             <div className="container"  ref={projectsRef} >
                 <ProjectsPage />
             </div>
-            <hr className="my-5"/>
             <div className="container"  ref={contactRef} >
                 <ContactPage />
             </div>

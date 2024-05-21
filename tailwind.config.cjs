@@ -12,6 +12,11 @@ module.exports = {
         lightblue: '#47B5FF'
       },
     },
+    screens: {
+      'mobile-xs': {max: '320px'},
+      'mobile-md': {max: '375px'},
+      'mobile-lg': {max: '430px'},
+    },
   },
   plugins: [],
 }
