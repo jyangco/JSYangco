@@ -19,7 +19,8 @@
 
 @media screen and (max-width: 430px) {
     .app {
-        background-color: lightblue;
+        background: #001C35;
+        color: #DFF6FF;
     }
     .container{
         padding: 0;
@@ -27,15 +28,30 @@
     .content-box{
         margin: 0px 50px !important;
         padding: 10px 0px !important;
-        height: 90vh !important;
+        min-height: 90vh !important;
     }
 }
 
-.app{
+@media screen and (max-width: 1000px){
+    .content-box{
+        margin: 0px 50px !important;
+        padding: 150px 0px !important;
+        min-height: 100vh !important;
+    }
+}
+
+@media screen and (min-width: 600){
+    .content-box{
+        margin: 0px 50px !important;
+        padding: 150px 0px !important;
+        min-height: 100vh !important;
+    }
+}
+
+body{
+    height: fit-content;
     background: #001C35;
     color: #DFF6FF;
-    width: 100vw;
-
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
@@ -44,12 +60,16 @@
 }
 
 .content-box{
-    margin: 0px 150px;
-    padding: 100px 0px;
-    height: 100vh;
+    margin: 0px 100px;
+    padding: 150px 0px;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
+    min-height: 100vh;
+}
+
+.content-box:last-child{
+    padding-bottom: 0px !important;
 }
 
 #navbar{

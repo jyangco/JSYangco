@@ -42,22 +42,22 @@ function App() {
                 <button className="text-left hover:text-lightblue focus:text-lightblue"
                     onClick={() => scrollDown(aboutmeRef)}
                 > 
-                    <span className="text-lightblue"> 01. </span> About Me 
+                    <span className="text-lightblue"> 01.</span>About Me 
                 </button>
                 <button className="text-left hover:text-lightblue focus:text-lightblue"
                     onClick={() => scrollDown(experienceRef)}
                 > 
-                    <span className="text-lightblue"> 02. </span> Experience 
+                    <span className="text-lightblue"> 02.</span>Experience 
                 </button>
                 <button className="text-left hover:text-lightblue focus:text-lightblue"
                     onClick={() => scrollDown(projectsRef)}
                 > 
-                    <span className="text-lightblue"> 03. </span> Projects 
+                    <span className="text-lightblue"> 03.</span>Projects 
                 </button>
                 <button className="text-left hover:text-lightblue focus:text-lightblue"
                     onClick={() => scrollDown(contactRef)}
                 > 
-                    <span className="text-lightblue"> 04. </span> Contact 
+                    <span className="text-lightblue"> 04.</span>Contact 
                 </button>
             </Header>
             <RightPanel/>

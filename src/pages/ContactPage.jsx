@@ -6,11 +6,11 @@ function ContactPage() {
             <div className="text-5xl text-left">
                 Contact
             </div>
-            <div className="flex h-5/6">
+            <div className="flex h-[70vh]">
                 <div className="w-3/4 m-auto">
                     <p>
                         Interested in working together? 
-                        I am always open for new projects and opportunities where I can contribute, learn, and grow .
+                        I am always open for new projects and opportunities where I can contribute, learn, and grow.
                         I'll get back to you as soon as I can. 
                     </p>
                     <div className="flex">
