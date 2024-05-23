@@ -14,7 +14,7 @@ function AboutMePage() {
                         <p className='mobile-lg:!text-sm mobile-lg:!w-[50%] mobile-lg:!my-auto'>
                             Hi! My name is Jason, and I am a passionate Full Stack Developer. 
                         </p>
-                        <img className="hidden mobile-lg:block mobile-lg:!h-[120px] mobile-lg:!w-[100px] mobile-lg:!mx-2"
+                        <img className="hidden mobile-lg:!block mobile-lg:!h-[120px] mobile-lg:!w-[100px] mobile-lg:!mx-2"
                             src={pic} alt="JSY" 
                         />
                     </div>
