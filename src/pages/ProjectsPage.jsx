@@ -30,7 +30,7 @@ function ProjectsPage() {
                 </div>
                 <hr className='my-4 w-[100%]'/>
                 <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
                         <img className="w-auto h-auto"
                             src={GADWeb} alt="JSY" 
                         />
@@ -48,7 +48,7 @@ function ProjectsPage() {
                 </div>
                 <hr className='my-4 w-[100%]'/>
                 <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
                         <img className="w-auto h-auto"
                             src={Project1} alt="JSY" 
                         />
@@ -63,6 +63,11 @@ function ProjectsPage() {
                         </p>
                     </div>
                 </div>
+            </div>
+            <div className="text-end w-[100%] hover:cursor-default py-5">
+                <a className='hover:text-lightblue' href="https://github.com/jyangco" target='_blank' > 
+                    GitHub<i className="fab fa-github fa-lg"></i>
+                </a>
             </div>
         </div>
     )

@@ -11,6 +11,10 @@ module.exports = {
         lightnavy: '#012b52',
         lightblue: '#47B5FF'
       },
+      container: {
+        center: true,
+        padding: '100px',
+      },
     },
     screens: {
       'mobile-xs': {max: '320px'},
