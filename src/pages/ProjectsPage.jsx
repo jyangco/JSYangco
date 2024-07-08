@@ -2,7 +2,9 @@ import React from 'react'
 
 import GADISPic from '../assets/Proj1.png'
 import GADWeb from '../assets/Proj2.png'
+import HRMUTKS from '../assets/Proj4.png'
 import Project1 from '../assets/Proj3.png'
+import Project2 from '../assets/Proj5.png'
 
 function ProjectsPage() {
     return (
@@ -24,7 +26,7 @@ function ProjectsPage() {
                             and serve as a reliable resource in formulation and monitoring of policies that are beneficial for both women and men to facilitate decision making. 
                         </p>
                         <p>
-                            GADIS is developed using Laravel, React, Tailwind CSS and Postresql as the database
+                            GADIS is developed using Laravel, React, Tailwind CSS, and Postresql as the database
                         </p>
                     </div>
                 </div>
@@ -43,6 +45,44 @@ function ProjectsPage() {
                         </p>
                         <p>
                             The website is developed using React and Tailwind CSS 
+                        </p>
+                    </div>
+                </div>
+                <hr className='my-4 w-[100%]'/>
+                <div className="w-[100%] flex flex-wrap">
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
+                        <img className="w-auto h-auto"
+                            src={HRMUTKS} alt="JSY" 
+                        />
+                        <div className='text-xl text-justify'> DOST - SEI's Human Resource Timekeeping System  </div>
+                    </div>
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
+                        <p>
+                            The Timekeeping is created for the DOST - SEI's Human Resource Management Unit, to track DTR and manage employees during work-from-home arrangements.
+                        </p>
+                        <p>
+                            The system is developed using Node, Express, React, Tailwind CSS, and Firebase 
+                        </p>
+                    </div>
+                </div>
+                <hr className='my-4 w-[100%]'/>
+                <div className="w-[100%] flex flex-wrap">
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
+                        <img className="w-auto h-auto"
+                            src={Project2} alt="JSY" 
+                        />
+                        <div className='text-xl text-justify'> Menu CRUD App  </div>
+                    </div>
+                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
+                        <p>
+                            This menu CRUD app is a personal project, exploring Firebase and trying Vercel.
+                        </p>
+                        <p>
+                            You can actually visit the app <span>  </span>
+                            <a className='underline text-sky-500' href="https://menu-crud-app.vercel.app" target="_blank">here</a>
+                        </p>
+                        <p>
+                            This is developed React, Tailwind CSS, and Firebase
                         </p>
                     </div>
                 </div>

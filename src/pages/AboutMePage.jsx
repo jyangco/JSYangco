@@ -25,7 +25,7 @@ function AboutMePage() {
                         As the only developer and a recent graduate at the time, it was a challenging experience but ultimately rewarding as I acquired new knowledge and improved my skills.
                     </p>
                     <p className='mobile-lg:!text-sm'>
-                        I am adept at problem-solving and is always eager to learn and adapt to new technologies 
+                        I am adept at problem-solving and is always eager to learn and adapt to new technologies.
                     </p>
                 </div>
                 <div className="w-2/5 mobile-lg:!hidden">
