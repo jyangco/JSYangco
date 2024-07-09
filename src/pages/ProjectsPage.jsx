@@ -41,7 +41,7 @@ function ProjectsPage() {
                     <div className="w-[50%] mobile-lg:!w-[100%] p-3">
                         <p>
                             The DOST - SEI's GAD Website is created with the goal of mainstreaming GAD within the Institute;
-                            and informing our clients of the activities made by the Institute to mainstream Gender And Development
+                            and informing our clients of the activities made by the Institute to mainstream Gender And Development.
                         </p>
                         <p>
                             The website is developed using React and Tailwind CSS 
@@ -54,11 +54,11 @@ function ProjectsPage() {
                         <img className="w-auto h-auto"
                             src={HRMUTKS} alt="JSY" 
                         />
-                        <div className='text-xl text-justify'> DOST - SEI's Human Resource Timekeeping System  </div>
+                        <div className='text-xl text-justify'> DOST - SEI's HR Management Unit's Timekeeping System  </div>
                     </div>
                     <div className="w-[50%] mobile-lg:!w-[100%] p-3">
                         <p>
-                            The Timekeeping is created for the DOST - SEI's Human Resource Management Unit, to track DTR and manage employees during work-from-home arrangements.
+                            The Timekeeping System is created for the DOST - SEI's HR Management Unit, to track DTR and manage employees during work-from-home arrangements.
                         </p>
                         <p>
                             The system is developed using Node, Express, React, Tailwind CSS, and Firebase 
@@ -82,7 +82,7 @@ function ProjectsPage() {
                             <a className='underline text-sky-500' href="https://menu-crud-app.vercel.app" target="_blank">here</a>
                         </p>
                         <p>
-                            This is developed React, Tailwind CSS, and Firebase
+                            This is developed using React, Tailwind CSS, and Firebase
                         </p>
                     </div>
                 </div>
