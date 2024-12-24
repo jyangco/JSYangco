@@ -11,8 +11,8 @@ const Header = ({ children }) => {
                 <div className="w-[45%] pl-40 mobile-lg:!pl-10">
                     <img onClick={reloadPage} src={logo} alt="logo" className="w-10 h-10 hover:cursor-pointer" />
                 </div>
-                <div className="w-[55%] text-right mobile-lg:!hidden">
-                    <div id="headerbtn" className="flex justify-evenly lg:text-lg md:text-sm md:py-2">
+                <div className="w-[55%] text-right tablet:!hidden">
+                    <div id="headerbtn" className="flex justify-evenly lg:text-lg md:text-sm md:py-2 sm:text-sm xs:text-xs">
                         {children}
                     </div>  
                 </div>

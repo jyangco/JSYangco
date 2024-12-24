@@ -20,6 +20,7 @@ module.exports = {
       'mobile-xs': {max: '320px'},
       'mobile-md': {max: '375px'},
       'mobile-lg': {max: '450px'},
+      'tablet' : {max: '740px'}
     },
   },
   plugins: [],
