@@ -7,7 +7,7 @@ import Project1 from '../assets/Proj3.png'
 import FeaturedProject2 from '../assets/EWRC.png'
 
 function ProjectsPage() {
-    const projects = [
+    const featured = [
         {
             title: "Featured Project: Eastood City Run Club",
             description: [
@@ -18,6 +18,8 @@ function ProjectsPage() {
             live: true,
             liveLink: "https://eastwoodrunclub.com/"
         },
+    ]
+    const projects = [
         {
             title: "GADIS - Gender And Development Information System",
             description: [
@@ -53,10 +55,38 @@ function ProjectsPage() {
     ]
 
     return (
-        <div className="content-box px-4 py-10 max-w-6xl mx-auto">
+        <div className="content-box">
             <h1 className="text-5xl font-bold mb-10 text-[#DFF6FF]">Projects</h1>
-            <div className="flex flex-col space-y-16">
-                {projects.map((proj, index) => (
+            <div className="flex flex-col space-y-16">  
+                {featured.map((proj, index) => 
+                    <div
+                        key={index}
+                        className="w-full flex flex-wrap items-center">
+                        <div className="mobile-lg:!w-full p-3">
+                            <img
+                                src={proj.img}
+                                alt={proj.title}
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                            <h2 className="text-xl text-[#DFF6FF] mt-2">{proj.title}</h2>
+                            <a
+                                href={proj.liveLink}
+                                target="_blank"
+                                className="text-green-400 font-semibold flex items-center w-fit"
+                            >
+                                <div className="w-3 h-3 me-1 rounded-full bg-red-600 border-2 border-[#001C35]"/>Live Project
+                            </a>
+                        </div>
+                        <div className="mobile-lg:!w-full p-3 text-[#DFF6FF]">
+                            {proj.description.map((para, i) => (
+                                <p key={i} className="mb-2">
+                                    {para}
+                                </p>
+                            ))}
+                        </div>
+                    </div>
+                )}
+                {projects.map((proj, index) => 
                     <div
                         key={index}
                         className={`w-full flex flex-wrap items-center ${
@@ -70,16 +100,6 @@ function ProjectsPage() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <h2 className="text-xl text-[#DFF6FF] mt-2">{proj.title}</h2>
-                            {proj.live && (
-                                <a
-                                    href={proj.liveLink}
-                                    target="_blank"
-                                    className="text-green-400 font-semibold flex items-center w-fit"
-                                >
-                                    <div className="w-3 h-3 me-1 rounded-full bg-red-600 border-2 border-[#001C35]"/>Live Project
-                                </a>
-                            )}
-
                         </div>
                         <div className="w-1/2 mobile-lg:!w-full p-3 text-[#DFF6FF]">
                             {proj.description.map((para, i) => (
@@ -89,7 +109,7 @@ function ProjectsPage() {
                             ))}
                         </div>
                     </div>
-                ))}
+                )}
             </div>
             <div className="text-end w-full hover:cursor-default py-5">
                 <a

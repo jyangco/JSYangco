@@ -39,7 +39,7 @@ function ExperiencePage() {
     ]
 
     return (
-        <div className="content-box px-4 py-10 max-w-5xl mx-auto">
+        <div className="content-box">
             <h1 className="text-5xl font-bold mb-10 text-[#DFF6FF]">Experience</h1>
             <div className="relative">
                 <div className="absolute left-5 top-0 w-1 bg-[#3399FF] h-full"></div>

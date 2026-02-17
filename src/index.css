@@ -27,15 +27,14 @@
     }
     .content-box{
         margin: 0px 50px !important;
-        padding: 10px 0px !important;
         min-height: 90vh !important;
-    }
+        padding-top: 100px !important         ;
+    } 
 }
 
 @media screen and (max-width: 1000px){
     .content-box{
         margin: 0px 50px !important;
-        padding: 150px 0px !important;
         min-height: 100vh !important;
     }
 }
@@ -43,7 +42,6 @@
 @media screen and (min-width: 600){
     .content-box{
         margin: 0px 50px !important;
-        padding: 150px 0px !important;
         min-height: 100vh !important;
     }
 }
@@ -55,17 +53,22 @@ body{
     font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
+.app{
+    display: flex !important;
+    flex-direction: column;
+}
+
 .content-box p{
     margin-bottom: 10px;
 }
 
 .content-box{
     margin: 0px 100px;
-    padding: 150px 0px;
     animation: fadeInAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     min-height: 100vh;
+    padding-top: 150px;
 }
 
 .content-box:last-child{
