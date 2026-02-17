@@ -9,10 +9,15 @@ import FeaturedProject2 from '../assets/EWRC.png'
 function ProjectsPage() {
     const featured = [
         {
-            title: "Featured Project: Eastood City Run Club",
+            title: "Featured Project: Eastwood City Run Club",
             description: [
-                "Eastwood Run Club is built to manage mall running events end-to-end. Participants can register and verify their emails, upload run records, redeem rewards, and easily join activities with a single click thanks to the efficient state management provided by Context API with automated emails via cron jobs to notify other mall partners about registration activities. Admins can approve participant run activity, redemption requests, and manage events. This platform streamlines event management for both organizers and participants, reducing manual work and improving overall engagement.",
-                "Developed using Next.js 13, React, Context API, PostgreSQL, HubSpot, Prisma, AWS SES, Vercel, GitHub"
+                "A production-ready event management platform for mall running communities.",
+                "Managing mall running events involves coordinating registrations, verifying participants, reviewing activity submissions, approving rewards, and syncing updates with multiple mall partners — often through manual and fragmented processes.",
+                "I designed and built Eastwood Run Club as a centralized system to streamline the entire event lifecycle.",
+                "The platform models participants, activities, approvals, and reward redemptions in a structured relational database, enabling clear workflows for both users and administrators. Role-based access ensures participants and admins operate within defined boundaries, while automated background jobs handle notification flows and partner updates without blocking user interactions.",
+                "Admins can oversee events and approvals through a dedicated dashboard, while participants register, verify their accounts, and submit activities seamlessly. Integration with HubSpot and AWS SES ensures reliable communication and partner coordination.",
+                "By automating repetitive processes and structuring the system around scalable workflows, the platform reduces administrative overhead and ensures events operate efficiently even as participation grows.",
+                "Tech Stack: Next.js 13, Tailwindcss, PostgreSQL (Prisma ORM), AWS SES, HubSpot API, Vercel",
             ],
             img: FeaturedProject2,
             live: true,
@@ -69,12 +74,15 @@ function ProjectsPage() {
                                 className="w-full h-auto rounded-lg shadow-lg"
                             />
                             <h2 className="text-xl text-[#DFF6FF] mt-2">{proj.title}</h2>
+                            <div className="text-green-400 text-base font-semibold flex items-center w-fit">
+                                <div className="w-3 h-3 me-1 rounded-full bg-red-600 border-2 border-[#001C35]"/>Live Project 
+                            </div>
                             <a
                                 href={proj.liveLink}
                                 target="_blank"
-                                className="text-green-400 font-semibold flex items-center w-fit"
+                                className="text-blue-400 text-base font-semibold flex items-center w-fit"
                             >
-                                <div className="w-3 h-3 me-1 rounded-full bg-red-600 border-2 border-[#001C35]"/>Live Project
+                                <i className="fas fa-external-link fa-xs me-1"></i> Demo here
                             </a>
                         </div>
                         <div className="mobile-lg:!w-full p-3 text-[#DFF6FF]">
@@ -86,7 +94,7 @@ function ProjectsPage() {
                         </div>
                     </div>
                 )}
-                {projects.map((proj, index) => 
+                {/* {projects.map((proj, index) => 
                     <div
                         key={index}
                         className={`w-full flex flex-wrap items-center ${
@@ -109,15 +117,17 @@ function ProjectsPage() {
                             ))}
                         </div>
                     </div>
-                )}
+                )} */}
             </div>
-            <div className="text-end w-full hover:cursor-default py-5">
+            <div className="flex justify-between items-center hover:cursor-default py-5">
+                <h2 className="text-[#DFF6FF]">I also have some small personal projects in my GitHub account <i className="fal fa-hand-point-right"></i></h2>
+
                 <a
                     className="hover:text-lightblue"
                     href="https://github.com/jyangco"
                     target="_blank"
                 >
-                    GitHub <i className="fab fa-github fa-lg ms-1"></i>
+                    GitHub <i className="fab fa-github fa-lg"></i>
                 </a>
             </div>
         </div>
