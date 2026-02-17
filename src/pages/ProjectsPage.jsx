@@ -1,112 +1,103 @@
 import React from 'react'
 
-import GADISPic from '../assets/Proj1.png'
+import GADISPic from '../assets/Proj1.png' 
 import GADWeb from '../assets/Proj2.png'
-import HRMUTKS from '../assets/Proj4.png'
+import HRMUTKS from '../assets/Proj4.png' 
 import Project1 from '../assets/Proj3.png'
-import Project2 from '../assets/Proj5.png'
+import FeaturedProject2 from '../assets/EWRC.png'
 
 function ProjectsPage() {
+    const projects = [
+        {
+            title: "Featured Project: Eastood City Run Club",
+            description: [
+                "Eastwood Run Club is built to manage mall running events end-to-end. Participants can register and verify their emails, upload run records, redeem rewards, and easily join activities with a single click thanks to the efficient state management provided by Context API with automated emails via cron jobs to notify other mall partners about registration activities. Admins can approve participant run activity, redemption requests, and manage events. This platform streamlines event management for both organizers and participants, reducing manual work and improving overall engagement.",
+                "Developed using Next.js 13, React, Context API, PostgreSQL, HubSpot, Prisma, AWS SES, Vercel, GitHub"
+            ],
+            img: FeaturedProject2,
+            live: true,
+            liveLink: "https://eastwoodrunclub.com/"
+        },
+        {
+            title: "GADIS - Gender And Development Information System",
+            description: [
+                "GADIS is created to provide a broad overview of gender and development statistics and serve as a reliable resource for policy formulation and monitoring.",
+                "Developed using Laravel, React, Tailwind CSS, and PostgreSQL."
+            ],
+            img: GADISPic
+        },
+        {
+            title: "GAD Website",
+            description: [
+                "The DOST-SEI GAD Website aims to mainstream GAD within the Institute and inform clients about activities and initiatives.",
+                "Developed using React and Tailwind CSS."
+            ],
+            img: GADWeb
+        },
+        {
+            title: "HR Management Unit Timekeeping System",
+            description: [
+                "Tracks DTR and manages employees during work-from-home arrangements.",
+                "Developed using Node, Express, React, Tailwind CSS, and Firebase."
+            ],
+            img: HRMUTKS
+        },
+        {
+            title: "Shopping App Project",
+            description: [
+                "A personal project to challenge myself and learn new technologies.",
+                "Built using Node, Express, EJS, JQuery, and Tailwind CSS."
+            ],
+            img: Project1
+        },
+    ]
+
     return (
-        <div className="content-box">
-            <div className="text-5xl text-left">
-                Projects
+        <div className="content-box px-4 py-10 max-w-6xl mx-auto">
+            <h1 className="text-5xl font-bold mb-10 text-[#DFF6FF]">Projects</h1>
+            <div className="flex flex-col space-y-16">
+                {projects.map((proj, index) => (
+                    <div
+                        key={index}
+                        className={`w-full flex flex-wrap items-center ${
+                            index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                        }`}
+                    >
+                        <div className="w-1/2 mobile-lg:!w-full p-3">
+                            <img
+                                src={proj.img}
+                                alt={proj.title}
+                                className="w-full h-auto rounded-lg shadow-lg"
+                            />
+                            <h2 className="text-xl text-[#DFF6FF] mt-2">{proj.title}</h2>
+                            {proj.live && (
+                                <a
+                                    href={proj.liveLink}
+                                    target="_blank"
+                                    className="text-green-400 font-semibold flex items-center w-fit"
+                                >
+                                    <div className="w-3 h-3 me-1 rounded-full bg-red-600 border-2 border-[#001C35]"/>Live Project
+                                </a>
+                            )}
+
+                        </div>
+                        <div className="w-1/2 mobile-lg:!w-full p-3 text-[#DFF6FF]">
+                            {proj.description.map((para, i) => (
+                                <p key={i} className="mb-2">
+                                    {para}
+                                </p>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
-            <div className="flex flex-wrap py-5">
-                <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
-                        <img className="w-auto h-auto"
-                            src={GADISPic} alt="JSY" 
-                        />
-                        <div className='text-xl text-justify'> DOST - SEI's Gender And Developement Information System(GADIS) </div>
-                    </div>
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
-                        <p>
-                            GADIS is created with the goal of building a broad overview of statistics on gender and development; 
-                            and serve as a reliable resource in formulation and monitoring of policies that are beneficial for both women and men to facilitate decision making. 
-                        </p>
-                        <p>
-                            GADIS is developed using Laravel, React, Tailwind CSS, and Postresql as the database
-                        </p>
-                    </div>
-                </div>
-                <hr className='my-4 w-[100%]'/>
-                <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
-                        <img className="w-auto h-auto"
-                            src={GADWeb} alt="JSY" 
-                        />
-                        <div className='text-xl text-justify'> DOST - SEI's Gender And Developement Website </div>
-                    </div>
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
-                        <p>
-                            The DOST - SEI's GAD Website is created with the goal of mainstreaming GAD within the Institute;
-                            and informing our clients of the activities made by the Institute to mainstream Gender And Development.
-                        </p>
-                        <p>
-                            The website is developed using React and Tailwind CSS 
-                        </p>
-                    </div>
-                </div>
-                <hr className='my-4 w-[100%]'/>
-                <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
-                        <img className="w-auto h-auto"
-                            src={HRMUTKS} alt="JSY" 
-                        />
-                        <div className='text-xl text-justify'> DOST - SEI's HR Management Unit's Timekeeping System  </div>
-                    </div>
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
-                        <p>
-                            The Timekeeping System is created for the DOST - SEI's HR Management Unit, to track DTR and manage employees during work-from-home arrangements.
-                        </p>
-                        <p>
-                            The system is developed using Node, Express, React, Tailwind CSS, and Firebase 
-                        </p>
-                    </div>
-                </div>
-                <hr className='my-4 w-[100%]'/>
-                <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
-                        <img className="w-auto h-auto"
-                            src={Project2} alt="JSY" 
-                        />
-                        <div className='text-xl text-justify'> Menu CRUD App  </div>
-                    </div>
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
-                        <p>
-                            This menu CRUD app is a personal project, exploring Firebase and trying Vercel.
-                        </p>
-                        <p>
-                            You can actually visit the app <span>  </span>
-                            <a className='underline text-sky-500' href="https://menu-crud-app.vercel.app" target="_blank">here</a>
-                        </p>
-                        <p>
-                            This is developed using React, Tailwind CSS, and Firebase
-                        </p>
-                    </div>
-                </div>
-                <hr className='my-4 w-[100%]'/>
-                <div className="w-[100%] flex flex-wrap">
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3 my-auto">
-                        <img className="w-auto h-auto"
-                            src={Project1} alt="JSY" 
-                        />
-                        <div className='text-xl text-justify'> Shopping App Project  </div>
-                    </div>
-                    <div className="w-[50%] mobile-lg:!w-[100%] p-3">
-                        <p>
-                            This shopping app is a personal project, challenging myself and learning new technologies.
-                        </p>
-                        <p>
-                            This is developed using Node, Express, EJS, JQuery and Tailwind CSS
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="text-end w-[100%] hover:cursor-default py-5">
-                <a className='hover:text-lightblue' href="https://github.com/jyangco" target='_blank' > 
-                    GitHub<i className="fab fa-github fa-lg"></i>
+            <div className="text-end w-full hover:cursor-default py-5">
+                <a
+                    className="hover:text-lightblue"
+                    href="https://github.com/jyangco"
+                    target="_blank"
+                >
+                    GitHub <i className="fab fa-github fa-lg ms-1"></i>
                 </a>
             </div>
         </div>
