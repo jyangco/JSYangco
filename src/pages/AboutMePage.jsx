@@ -1,5 +1,5 @@
 import React from 'react'
-import ProfilePic from '../assets/JSY1.png'
+import ProfilePic from '../assets/JSY1.webp'
 
 function AboutPage() {
     const focusAreas = [
