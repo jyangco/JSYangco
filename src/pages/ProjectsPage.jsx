@@ -12,18 +12,20 @@ function ProjectsPage() {
     const featuredProjects = [
         {
             number: '01',
-            title: 'Dynamic Registration Form Builder',
+            title: 'MLM Registrations Platform',
             status: 'In Development',
             description:
                 'A configurable registration platform designed to let event administrators create and manage registration forms without requiring code changes. Event configuration, dynamic URLs, field types, and registration workflows are handled through a centralized system.',
             technologies: [
                 'Next.js',
-                'React',
                 'PostgreSQL',
-                'Prisma'
+                'Prisma',
+                'AWS - SES',
+                'Vercel',
+                'HubSpot'
             ],
             image: null,
-            link: null
+            link: 'https://mlm-registrations.megaworld-lifestylemalls.com/'
         },
         {
             number: '02',
@@ -33,10 +35,8 @@ function ProjectsPage() {
                 'A production platform built to manage mall running events and participant activities end-to-end. The system connects registration, email verification, run submissions, approvals, rewards, event management, and partner notifications into a single workflow.',
             technologies: [
                 'Next.js',
-                'React',
                 'PostgreSQL',
-                'Prisma',
-                'AWS',
+                'AWS - SES',
                 'Vercel',
                 'HubSpot'
             ],
@@ -116,11 +116,52 @@ function ProjectsPage() {
             ],
             technologies: [
                 'Next.js',
-                'AWS Textract',
+                'AWS - Textract',
                 'HubSpot',
                 'PostgreSQL',
             ],
             image: null
+        },
+        {
+            title: "Mall Run Clubs",
+            description: [
+                "Maintenance and update of various Mall Run Clubs. Enhancements, upgrades and adding of features for the run clubs based on Marketing Team requests.",
+            ],
+            technologies: [
+                'Next.js',
+                'AWS - SES',
+                'HubSpot',
+                'PostgreSQL',
+            ],
+            image: null
+        },
+        {
+            title: "Internal Ticketing System",
+            description: [
+                "Internal ticketing system for requests from other departments. Update status, add comments, and send automatic emails upon ticket updates thru AWS - SES",
+            ],
+            technologies: [
+                'Next.js',
+                'AWS - SES',
+                'PostgreSQL'
+            ],
+            image: null
+        },
+        {
+            title: "Private(Local) AI Assistant (in dev...)",
+            description: [
+                "C my personal AI Assistant. C connects knowledge, navigates codebases, helps debug and modify code, and turns ideas into action through intelligent, tool-powered assistance.",
+            ],
+            technologies: [
+                'NestJS',
+                'Prisma',
+                'PostgreSQL',
+                'Ollama',
+                'RAG',
+                'Next.js',
+                'Docker'
+            ],
+            image: GADISPic
         },
     ]
 
