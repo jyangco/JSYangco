@@ -148,20 +148,17 @@ function ProjectsPage() {
             image: null
         },
         {
-            title: "Private(Local) AI Assistant (in dev...)",
+            title: "Wedding RSVP",
             description: [
-                "C my personal AI Assistant. C connects knowledge, navigates codebases, helps debug and modify code, and turns ideas into action through intelligent, tool-powered assistance.",
+                "A beautifully designed wedding invitation website featuring elegant animations, a personalized digital invitation, and an RSVP form.",
             ],
             technologies: [
-                'NestJS',
-                'Prisma',
-                'PostgreSQL',
-                'Ollama',
-                'RAG',
                 'Next.js',
-                'Docker'
+                'PostgreSQL',
+                'TailwindCSS'
             ],
-            image: GADISPic
+            image: null,
+            link: "https://wedding-rsvp-neon.vercel.app/"
         },
     ]
 
@@ -176,7 +173,24 @@ function ProjectsPage() {
                 "Material UI"
             ],
             image: null
-        }
+        },
+        {
+            title: "Private(Local) AI Assistant",
+            description: [
+                "Currently in develpoment. ",
+                "C is a personal AI assistant designed to go beyond conversations by combining intelligent knowledge retrieval, codebase exploration, debugging, and code modification into one unified experience. Built to work with local projects and tools, C helps you understand complex systems, find answers across repositories, troubleshoot issues, and turn ideas into practical solutions—all through natural conversation."
+            ],
+            technologies: [
+                'NestJS',
+                'Prisma',
+                'PostgreSQL',
+                'Ollama',
+                'RAG',
+                'Next.js',
+                'Docker'
+            ],
+            image: null
+        },
     ]
 
     return (
@@ -306,7 +320,7 @@ function ProjectsPage() {
                     </h2>
                     <div className="h-px bg-gray-700 flex-1" />
                 </div>
-                <div className="grid grid-cols-1 md:!grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:!grid-cols-2 gap-6">
                     {hackathonProjects.map((project) => (
                         <div
                             key={project.title}
@@ -345,7 +359,7 @@ function ProjectsPage() {
                 </div>
             </div>
             {/* GITHUB */}
-            <div className="max-w-6xl mx-auto px-6 pb-10 text-right">
+            <div className="max-w-6xl mx-auto px-6 pt-10 text-right">
                 <a
                     href="https://github.com/jyangco"
                     target="_blank"
